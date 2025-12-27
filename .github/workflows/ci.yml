@@ -1,0 +1,12 @@
+name : first workflow
+on : 
+    pull_request :
+         branches :
+          - main
+jobs :
+    runners:
+        runs-on: ubuntu-latest
+        steps : 
+           - uses: 'actions/checkout@v6'
+           - run : echo hii workflow
+         
